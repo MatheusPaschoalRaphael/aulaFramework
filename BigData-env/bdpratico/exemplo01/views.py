@@ -8,3 +8,6 @@ def pagina0(request):
 
 def pagina1(request):
     return render(request, 'pagina1.html')
+
+def pagina2(request):
+    return render(request, 'pagina2.html')
