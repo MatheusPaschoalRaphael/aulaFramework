@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'exemplo01',
     'exemplo02',
     'django_bootstrap5',
+    'django_tables2',
+
 ]
 
 MIDDLEWARE = [
