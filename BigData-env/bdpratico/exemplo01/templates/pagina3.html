@@ -1,0 +1,41 @@
+{% load static %}
+{% load django_bootstrap5 %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Página3.html</title>
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+    </head>
+    <body>
+        {% bootstrap_messages %}
+        <img src="{% static 'pagina3.png' %}" class="img-fluid" alt="Teste" width="15%">
+        <p class="h2">Colocando Estilos na Página</p>
+        <p>bdpratico\exemplo01\templates\pagina3.html</p>
+        <div class="container">
+            <div class="row" style="line-height: 1;">
+                <div class="col-12">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>eMail</th>
+                                <th>Celular</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for regs in pessoas %}
+                                <tr>
+                                    <td>{{ regs.nome }}</td>
+                                    <td>{{ regs.email }}</td>
+                                    <td>{{ regs.celular }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
