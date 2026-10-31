@@ -1,0 +1,17 @@
+--Instalação do python se necessário
+python --version
+senão tem instalar
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+python -m venv BigData-env
+Acessar a pasta BigData-env
+Scripts\Activate.ps1  
+
+--Já dentro do ambiente
+pip install Django
+python -m django --version
+django-admin startproject bdpratico
+
+--Acessar pasta bdpratico 
+python manage.py runserver (Site está no ar)
+python manage.py startapp exemplo01
+python manage.py startapp exemplo02

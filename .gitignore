@@ -1,0 +1,14 @@
+# Ambiente virtual (recriar com: pip install -r requirements.txt)
+# O código do projeto Django (bdpratico) fica dentro dele e deve ser versionado
+BigData-env/*
+!BigData-env/bdpratico/
+
+# Python
+__pycache__/
+*.pyc
+
+# Banco de dados local do Django
+db.sqlite3
+
+# Editor
+.vscode/
